@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIM Ultrafibra Para Empresas – Internet Fibra Empresarial</title>
+  <meta name="description"
+    content="TIM Ultrafibra para sua empresa: internet fibra de alta velocidade com IP Fixo, suporte premium e Upload Turbo. Solicite uma proposta!" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="lp-tim.css" />
+
+  <style>
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body class="business-theme">
+
+  <!-- HEADER -->
+  <header class="header" id="main-header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <img src="logo-tim-azul.png" alt="TIM Ultrafibra" width="60" height="auto">
+      </div>
+
+      <!-- Toggle Central -->
+      <nav class="header__nav">
+        <a href="index.html" class="nav-link">Para Casa</a>
+        <a href="empresas.html" class="nav-link active">Para Empresa</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="#planos" class="btn btn--highlight header__cta">Contratar</a>
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__content">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Para Casa</a>
+        <a href="empresas.html" class="mobile-nav-link active">Para Empresa</a>
+        <hr class="mobile-divider">
+        <a href="#planos" onclick="toggleMobileMenu()">Planos</a>
+        <a href="#beneficios" onclick="toggleMobileMenu()">Benefícios</a>
+        <a href="#depoimentos" onclick="toggleMobileMenu()">Depoimentos</a>
+        <a href="#faq" onclick="toggleMobileMenu()">Dúvidas</a>
+      </nav>
+      <a href="#planos" class="btn btn--highlight full-width" onclick="toggleMobileMenu()">Contratar Agora</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero__badge" id="hero-tag">TIM EMPRESAS</span>
+          <h1 class="hero__title" id="hero-title">A Ultravelocidade da TIM no seu negócio</h1>
+          <p class="hero__subtitle" id="hero-desc">
+            Conecte-se com o futuro. Estabilidade, IP Fixo e performance para sua empresa crescer.
+          </p>
+
+          <div id="hero-plan-name" class="plan-highlight">
+            <strong style="color: #00D6D6;">1 GIGA</strong>
+          </div>
+
+          <div class="hero__price-box">
+            <span class="hero__price-old" id="hero-price-old">De R$ 229,99</span>
+            <div class="hero__price-value">
+              <span class="currency">R$</span>
+              <span id="hero-price-new">119,99</span>
+              <span class="period">/mês</span>
+            </div>
+            <p class="hero__price-note" id="hero-price-note">No Débito Automático</p>
+          </div>
+
+          <a href="#planos" class="btn btn--highlight btn--lg">Contratar</a>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <!-- Using a placeholder image that fits the description "Person pointing left" or similar generic happy person -->
+          <picture>
+            <source media="(min-width: 769px)" srcset="iza-sem-fundo.png">
+            <img src="iza-sem-fundo.png" alt="Cliente Empresarial" class="hero__image">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS SECTION -->
+    <section class="plans-section" id="planos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Escolha o plano ideal para você</h2>
+          <p>Internet com ultravelocidade e estabilidade.</p>
+        </div>
+
+        <!-- LISTA CASA -->
+        <div id="lista-casa" class="plans-grid">
+          <!-- Card 1 -->
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <span class="plan-card__badge">MAIS VENDIDO</span>
+              <h3>TIM Ultrafibra</h3>
+              <div class="plan-card__speed">600 MEGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 149,99</s>
+              <div>
+                <span class="currency">R$</span>119<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> 600 Mega Download</li>
+              <li><i class="icon-check"></i> 300 Mega Upload</li>
+              <li><i class="icon-check"></i> <span class="streaming-globoplay">Globoplay Incluso</span></li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('600 Mega Casa', 'Casa')">Contratar</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-card__badge">OFERTA FOCO</div>
+            <div class="plan-card__header">
+              <h3>TIM Ultrafibra</h3>
+              <div class="plan-card__speed">700 MEGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 189,99</s>
+              <div>
+                <span class="currency">R$</span>99<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> 700 Mega Download</li>
+              <li><i class="icon-check"></i> 350 Mega Upload</li>
+              <li><i class="icon-check"></i> Instalação Grátis</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('700 Mega Casa', 'Casa')">Contratar</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <h3>TIM Ultrafibra</h3>
+              <div class="plan-card__speed">1 GIGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 229,99</s>
+              <div>
+                <span class="currency">R$</span>149<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> 1 Giga Download</li>
+              <li><i class="icon-check"></i> 500 Mega Upload</li>
+              <li><i class="icon-check"></i> <span class="streaming-paramount">Paramount+</span></li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width" onclick="openWhatsApp('1 Giga Casa', 'Casa')">Contratar</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <h3>TIM Ultrafibra</h3>
+              <div class="plan-card__speed">2 GIGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 459,99</s>
+              <div>
+                <span class="currency">R$</span>369<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> <strong>Wi-Fi 6E</strong> (Novo)</li>
+              <li><i class="icon-check"></i> 2 Giga Download</li>
+              <li><i class="icon-check"></i> 1 Giga Upload</li>
+              <li><i class="icon-check"></i> HBO Max Incluso</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width" onclick="openWhatsApp('2 Giga Casa', 'Casa')">Contratar</a>
+          </div>
+        </div>
+
+        <!-- LISTA EMPRESA -->
+        <div id="lista-empresa" class="plans-grid hidden">
+          <!-- Card 1 -->
+          <div class="plan-card b2b-card">
+            <div class="plan-card__header">
+              <h3>TIM Empresas</h3>
+              <div class="plan-card__speed">700 MEGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 189,99</s>
+              <div>
+                <span class="currency">R$</span>99<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> Apps de Conteúdo</li>
+              <li><i class="icon-check"></i> IP Dinâmico</li>
+              <li><i class="icon-check"></i> Suporte Digital</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('700 Mega Empresa', 'Empresa')">Contratar</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="plan-card b2b-card plan-card--featured">
+            <div class="plan-card__badge">DESTAQUE</div>
+            <div class="plan-card__header">
+              <h3>TIM Empresas</h3>
+              <div class="plan-card__speed">1 GIGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 229,99</s>
+              <div>
+                <span class="currency">R$</span>119<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> Upload Turbo</li>
+              <li><i class="icon-check"></i> IP Fixo (Opcional)</li>
+              <li><i class="icon-check"></i> Prioridade de Tráfego</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('1 Giga Empresa', 'Empresa')">Contratar</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="plan-card b2b-card">
+            <div class="plan-card__header">
+              <h3>TIM Empresas</h3>
+              <div class="plan-card__speed">2 GIGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 459,99</s>
+              <div>
+                <span class="currency">R$</span>369<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6E Incluso</li>
+              <li><i class="icon-check"></i> Ultra Performance</li>
+              <li><i class="icon-check"></i> Suporte Premium</li>
+              <li><i class="icon-check"></i> Soluções Digitais</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('2 Giga Empresa', 'Empresa')">Contratar</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="plan-card telefonia-card">
+            <div class="plan-card__header">
+              <h3>Móvel Empresas</h3>
+              <div class="plan-card__speed" style="font-size: 1.5rem;">TIM BLACK</div>
+            </div>
+            <div class="plan-card__price">
+              <div style="font-size: 1.5rem; margin-top: 10px;">Consulte</div>
+            </div>
+            <span class="plan-card__note">Planos Personalizados</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Ligações Ilimitadas</li>
+              <li><i class="icon-check"></i> Muito mais internet</li>
+              <li><i class="icon-check"></i> Roaming Internacional</li>
+              <li><i class="icon-check"></i> Gestão de Linhas</li>
+            </ul>
+            <a href="#" class="btn btn--outline full-width"
+              onclick="openWhatsApp('Móvel Empresas', 'Empresa')">Solicitar Proposta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section id="beneficios" class="benefits-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Por que escolher a TIM Ultrafibra?</h2>
+          <p>Tecnologia de ponta para sua melhor experiência</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Rocket Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              </svg>
+            </div>
+            <h3>Ultravelocidade</h3>
+            <p>Downloads e uploads rápidos para você não perder tempo.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Wifi Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+            </div>
+            <h3>Wi-Fi 6</h3>
+            <p>Mais alcance e estabilidade para conectar todos os dispositivos.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Gamepad Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" x2="10" y1="12" y2="12" />
+                <line x1="8" x2="8" y1="10" y2="14" />
+                <line x1="15" x2="15.01" y1="13" y2="13" />
+                <line x1="18" x2="18.01" y1="11" y2="11" />
+                <rect width="20" height="12" x="2" y="6" rx="2" />
+              </svg>
+            </div>
+            <h3>Lag Zero</h3>
+            <p>A melhor conexão para jogos online e streaming em 4K.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Headset Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                </path>
+              </svg>
+            </div>
+            <h3>Suporte Digital</h3>
+            <p>Atendimento rápido e eficiente sempre que você precisar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS SECTION -->
+    <section id="depoimentos" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="testimonials-title">Quem usa TIM Ultrafibra no Nordeste, recomenda.</h2>
+        </div>
+
+        <!-- B2C Testimonials (Casa) -->
+        <div id="reviews-casa" class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mariana Costa"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Mariana Costa</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Fortaleza, CE</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"A melhor internet que já tive aqui no Meireles. A família toda usa ao mesmo
+              tempo e nunca trava."</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Lucas Pereira" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Lucas Pereira</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Recife, PE</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Trabalho de home office em Boa Viagem e a estabilidade da fibra mudou meu dia a
+              dia."</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="Fernanda Alves"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Fernanda Alves</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Salvador, BA</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Moro na Pituba e faço lives. O upload é sensacional, não perco um segundo de
+              transmissão."</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Rafael Souza" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Rafael Souza</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Natal, RN</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"O sinal do Wi-Fi 6 pega na casa toda em Ponta Negra. Atendimento técnico nota
+              10."</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Juliana Martins"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Juliana Martins</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Sobral, CE</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Uso para baixar videoaulas pesadas da faculdade. Salvou meu semestre, muito
+              rápida!"</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Roberto Mendes" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Roberto Mendes</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Teresina, PI</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Aqui no calor de Teresina a gente não sai de casa, só streaming 4K o dia todo.
+              A TIM aguenta o tranco!"</p>
+          </div>
+        </div>
+
+        <!-- B2B Testimonials (Empresa) -->
+        <div id="reviews-empresa" class="testimonials-grid hidden">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Marcos Oliveira"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Marcos Oliveira</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Dono de Cafeteria</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Oferecer Wi-Fi rápido para meus clientes é essencial. Com a TIM, o café está
+              sempre cheio e a conexão não cai."</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Cláudia Santos"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Cláudia Santos</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Escritório de Contabilidade</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Enviamos arquivos pesados para a Receita Federal o dia todo. A velocidade de
+              upload otimizou nosso tempo em 100%."</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Pedro H." class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Pedro H.</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Start-up de Tecnologia</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Precisávamos de IP Fixo e estabilidade para nossos servidores locais. O suporte
+              empresarial da TIM é diferenciado."</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Ana Paula" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Ana Paula</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Loja de Roupas/E-commerce</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Faço vendas por videochamada e gerencio o estoque na nuvem. A internet não pode
+              parar, e a TIM nunca me deixou na mão."</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Dr. Roberto Mendes"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Dr. Roberto Mendes</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Clínica Odontológica</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"A agenda digital e o sistema de raio-x na nuvem dependem da internet. Com a
+              TIM, a clínica nunca para."</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sofia Albuquerque"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Sofia Albuquerque</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Estúdio de Arquitetura</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Renderizamos projetos em 3D e enviamos para clientes fora do país. A velocidade
+              de upload de 500 Mega é fundamental."</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dúvidas Frequentes</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">O que é a TIM Ultrafibra?</button>
+            <div class="faq-answer">
+              <p>É a internet banda larga da TIM com tecnologia 100% fibra óptica, garantindo ultravelocidade e
+                estabilidade.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">A instalação é gratuita?</button>
+            <div class="faq-answer">
+              <p>Sim, a instalação é gratuita para a maioria dos planos mediante fidelidade de 12 meses.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Quais documentos preciso para contratar?</button>
+            <div class="faq-answer">
+              <p>Apenas RG e CPF. A contratação é rápida e pode ser feita totalmente online ou pelo WhatsApp.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">O Wi-Fi está incluso?</button>
+            <div class="faq-answer">
+              <p>Sim, todos os nossos planos incluem modem Wi-Fi de alta performance gratuitamente em regime de
+                comodato.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section id="contato" class="footer-cta">
+      <div class="container">
+        <h2>Pronto para ter TIM Ultrafibra?</h2>
+        <p class="footer-cta__subtitle">A instalação é rápida e você já sai navegando na ultravelocidade ainda hoje.</p>
+        <a href="#planos" class="btn btn--primary">Contratar Agora</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <img src="logo-tim-azul.png" alt="TIM Logo" width="80" height="auto">
+        <p class="footer__agent">Agente Autorizado TIM</p>
+      </div>
+
+      <div class="footer__contact">
+        <p>Vendas WhatsApp: <strong>(71) 99971-5589</strong></p>
+      </div>
+
+      <div class="footer__legal">
+        <p>&copy; 2024 TIM Ultrafibra. Todos os direitos reservados.</p>
+        <p>Ofertas sujeitas a análise de crédito e viabilidade técnica. Consulte o regulamento.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP WIDGET -->
+  <a href="#" class="whatsapp-widget" id="whatsappWidget" onclick="openWhatsApp('Geral', 'Widget')">
+    <div class="whatsapp-widget__content">
+      <div class="whatsapp-online">
+        <span class="status-dot"></span>
+        <span id="online-counter">...</span> pessoas online
+      </div>
+      <div class="whatsapp-widget__label">Falar no WhatsApp</div>
+    </div>
+    <div class="whatsapp-widget__icon">
+      <svg viewBox="0 0 32 32" width="32" height="32" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31418 29.2408C11.2974 30.3924 13.5736 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45765 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.38462 26.7692C11.2373 28.0269 13.5261 28.8462 16 28.8462Z" />
+        <path
+          d="M12.5 9.5C12.1672 8.83333 11.5 8.5 11 8.5C10.3 8.5 8.5 9.33333 8.5 11.5C8.5 13.1667 9.66667 15.5 12.5 18.5C15 21.1667 18 22.5 20 22.5C22 22.5 23 21 23 20C23 19.5 22.8333 19 22.5 18.5C22.1667 18 21 17.3333 20.5 17.5C20 17.6667 19 18.5 18.5 18.5C18 18.5 16.5 17.5 15 16C13.5 14.5 12.5 13 12.5 12.5C12.5 12 13.3333 11 13.5 10.5C13.6667 10 13 9.5 12.5 9.5Z" />
+      </svg>
+    </div>
+  </a>
+
+  <script src="lp-tim.js"></script>
+</body>
+
+</html>
