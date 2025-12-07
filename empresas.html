@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NKM8CZLG');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIM Ultrafibra Para Empresas – Internet Fibra Empresarial</title>
+  <meta name="description"
+    content="TIM Ultrafibra para sua empresa: internet fibra de alta velocidade com IP Fixo, suporte premium e Upload Turbo. Solicite uma proposta!" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="lp-tim.min.css" />
+
+  <style>
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body class="business-theme">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKM8CZLG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+  <!-- HEADER -->
+  <header class="header" id="main-header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <img src="logo-tim-azul.png" alt="TIM Ultrafibra" width="60" height="auto">
+      </div>
+
+      <!-- Toggle Central -->
+      <nav class="header__nav">
+        <a href="index.html" class="nav-link">Para Casa</a>
+        <span class="nav-link active">Para Empresa</span>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="#planos" class="btn btn--highlight header__cta">Contratar</a>
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__content">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Para Casa</a>
+        <span class="mobile-nav-link active">Para Empresa</span>
+        <hr class="mobile-divider">
+        <a href="#planos" onclick="toggleMobileMenu()">Planos</a>
+        <a href="#beneficios" onclick="toggleMobileMenu()">Benefícios</a>
+        <a href="#depoimentos" onclick="toggleMobileMenu()">Depoimentos</a>
+        <a href="#faq" onclick="toggleMobileMenu()">Dúvidas</a>
+      </nav>
+      <a href="#planos" class="btn btn--highlight full-width" onclick="toggleMobileMenu()">Contratar Agora</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION - Background Image Full Width -->
+    <section class="hero-banner" id="hero">
+      <!-- 
+        ============================================
+        INSTRUÇÕES PARA EDIÇÃO DO BANNER:
+        ============================================
+        
+        TROCAR IMAGENS:
+        - Desktop: Edite a URL em --hero-bg-desktop abaixo
+        - Mobile: Edite a URL em --hero-bg-mobile abaixo
+        
+        TROCAR TEXTOS:
+        - Edite diretamente os textos dentro das tags abaixo
+        - Não altere as classes CSS para manter o layout
+        
+        ============================================
+      -->
+      <style>
+        .hero-banner {
+          /* 
+           * ========== EDITE AS IMAGENS AQUI ==========
+           * Substitua as URLs abaixo pelas suas imagens de banner
+           */
+          --hero-bg-desktop: url('hero-empresa-tim-web.png');
+          --hero-bg-mobile: url('hero-empresa-mobile-m.png');
+
+          position: relative;
+          width: 100%;
+          min-height: 550px;
+          /* Gradiente de fallback + imagem */
+          background:
+            var(--hero-bg-desktop),
+            linear-gradient(135deg, #000000 0%, #001030 50%, #00164F 100%);
+          background-size: cover, cover;
+          background-position: right center, center;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+        }
+
+        @media (max-width: 768px) {
+          .hero-banner {
+            background:
+              var(--hero-bg-mobile),
+              linear-gradient(180deg, #000000 0%, #001030 50%, #00164F 100%);
+            background-size: cover, cover;
+            background-position: center top, center;
+            min-height: auto;
+            padding: 40px 0;
+          }
+        }
+
+        .hero-banner__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 60%;
+          height: 100%;
+          background: linear-gradient(90deg,
+              rgba(0, 0, 0, 0.78) 0%,
+              rgba(0, 16, 48, 0.62) 28%,
+              rgba(0, 16, 48, 0.32) 48%,
+              rgba(0, 16, 48, 0.0) 68%);
+          pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+          .hero-banner__overlay {
+            width: 100%;
+            background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0.9) 0%,
+                rgba(0, 16, 48, 0.75) 35%,
+                rgba(0, 22, 79, 0.35) 60%,
+                rgba(0, 22, 79, 0.0) 78%);
+          }
+        }
+
+        .hero-banner__content {
+          position: relative;
+          z-index: 2;
+          max-width: 550px;
+          padding: 60px 20px;
+        }
+
+        @media (max-width: 768px) {
+          .hero-banner__content {
+            max-width: 100%;
+            text-align: left;
+            padding: 30px 20px;
+          }
+        }
+
+        .hero-banner__badge {
+          display: inline-block;
+          background: rgba(255, 255, 255, 0.15);
+          color: #ffffff;
+          font-size: 0.8rem;
+          font-weight: 600;
+          padding: 6px 14px;
+          border-radius: 50px;
+          margin-bottom: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .hero-banner__title {
+          font-size: clamp(2rem, 5vw, 3.2rem);
+          font-weight: 800;
+          color: #ffffff;
+          line-height: 1.1;
+          margin-bottom: 16px;
+        }
+
+        .hero-banner__subtitle {
+          font-size: 1.05rem;
+          color: rgba(255, 255, 255, 0.85);
+          margin-bottom: 28px;
+          line-height: 1.5;
+        }
+
+        .hero-banner__plan {
+          margin-bottom: 12px;
+        }
+
+        .hero-banner__plan strong {
+          font-size: 1.6rem;
+          color: #00D6D6;
+          font-weight: 800;
+        }
+
+        .hero-banner__price-box {
+          margin-bottom: 28px;
+        }
+
+        .hero-banner__price-old {
+          font-size: 0.95rem;
+          color: rgba(255, 255, 255, 0.6);
+          text-decoration: line-through;
+          display: block;
+          margin-bottom: 6px;
+        }
+
+        .hero-banner__price-value {
+          display: flex;
+          align-items: baseline;
+          gap: 4px;
+          flex-wrap: wrap;
+          color: #00D6D6;
+        }
+
+        .hero-banner__price-value .currency {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
+        .hero-banner__price-value .price {
+          font-size: 3.2rem;
+          font-weight: 800;
+          line-height: 1;
+        }
+
+        .hero-banner__price-value .period {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 400;
+        }
+
+        .hero-banner__price-note {
+          font-size: 0.85rem;
+          color: rgba(255, 255, 255, 0.7);
+          margin-top: 6px;
+        }
+
+        .hero-banner .btn--highlight {
+          padding: 14px 36px;
+          font-size: 1rem;
+          background: #ffffff;
+          color: #003399;
+          font-weight: 700;
+          border-radius: 50px;
+          transition: all 0.3s ease;
+        }
+
+        .hero-banner .btn--highlight:hover {
+          background: #f0f0f0;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+          .hero-banner .btn--highlight {
+            width: 100%;
+            max-width: 280px;
+            padding: 14px 30px;
+          }
+        }
+      </style>
+
+      <div class="hero-banner__overlay"></div>
+
+      <div class="container">
+        <div class="hero-banner__content">
+          <!-- BADGE - Edite o texto abaixo -->
+          <span class="hero-banner__badge">TIM EMPRESAS</span>
+
+          <!-- TÍTULO PRINCIPAL - Edite o texto abaixo -->
+          <h1 class="hero-banner__title">A Ultravelocidade da TIM no seu negócio</h1>
+
+          <!-- SUBTÍTULO - Edite o texto abaixo -->
+          <p class="hero-banner__subtitle">
+            Conecte-se com o futuro. Estabilidade, IP Fixo e performance para sua empresa crescer.
+          </p>
+
+          <!-- NOME DO PLANO - Edite o texto abaixo -->
+          <div class="hero-banner__plan">
+            <strong style="color: #00D6D6;">1 GIGA</strong>
+          </div>
+
+          <!-- PREÇOS - Edite os valores abaixo -->
+          <div class="hero-banner__price-box">
+            <span class="hero-banner__price-old">De R$ 229,99</span>
+            <div class="hero-banner__price-value">
+              <span class="currency">R$</span>
+              <span class="price">119,99</span>
+              <span class="period">/mês</span>
+            </div>
+            <p class="hero-banner__price-note">No Débito Automático</p>
+          </div>
+
+          <!-- BOTÃO CTA -->
+          <a href="#planos" class="btn btn--highlight btn--lg">Contratar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS SECTION -->
+    <section class="plans-section" id="planos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Escolha o plano ideal para você</h2>
+          <p>Internet com ultravelocidade e estabilidade.</p>
+        </div>
+
+        <!-- LISTA EMPRESA -->
+        <div id="lista-empresa" class="plans-grid">
+          <!-- Card 1 -->
+          <div class="plan-card b2b-card">
+            <div class="plan-card__header">
+              <h3>TIM Empresas</h3>
+              <div class="plan-card__speed">700 MEGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 189,99</s>
+              <div>
+                <span class="currency">R$</span>99<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> Apps de Conteúdo</li>
+              <li><i class="icon-check"></i> IP Dinâmico</li>
+              <li><i class="icon-check"></i> Suporte Digital</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('700 Mega Empresa', 'Empresa')">Contratar</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="plan-card b2b-card plan-card--featured">
+            <div class="plan-card__badge">DESTAQUE</div>
+            <div class="plan-card__header">
+              <h3>TIM Empresas</h3>
+              <div class="plan-card__speed">1 GIGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 229,99</s>
+              <div>
+                <span class="currency">R$</span>119<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> Upload Turbo</li>
+              <li><i class="icon-check"></i> IP Fixo (Opcional)</li>
+              <li><i class="icon-check"></i> Prioridade de Tráfego</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('1 Giga Empresa', 'Empresa')">Contratar</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="plan-card b2b-card">
+            <div class="plan-card__header">
+              <h3>TIM Empresas</h3>
+              <div class="plan-card__speed">2 GIGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 459,99</s>
+              <div>
+                <span class="currency">R$</span>369<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6E Incluso</li>
+              <li><i class="icon-check"></i> Ultra Performance</li>
+              <li><i class="icon-check"></i> Suporte Premium</li>
+              <li><i class="icon-check"></i> Soluções Digitais</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('2 Giga Empresa', 'Empresa')">Contratar</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="plan-card telefonia-card">
+            <div class="plan-card__header">
+              <h3>Móvel Empresas</h3>
+              <div class="plan-card__speed" style="font-size: 1.5rem;">TIM BLACK</div>
+            </div>
+            <div class="plan-card__price">
+              <div style="font-size: 1.5rem; margin-top: 10px;">Consulte</div>
+            </div>
+            <span class="plan-card__note">Planos Personalizados</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Ligações Ilimitadas</li>
+              <li><i class="icon-check"></i> Muito mais internet</li>
+              <li><i class="icon-check"></i> Roaming Internacional</li>
+              <li><i class="icon-check"></i> Gestão de Linhas</li>
+            </ul>
+            <a href="#" class="btn btn--outline full-width"
+              onclick="openWhatsApp('Móvel Empresas', 'Empresa')">Solicitar Proposta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section id="beneficios" class="benefits-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Por que escolher a TIM Ultrafibra?</h2>
+          <p>Tecnologia de ponta para sua melhor experiência</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Rocket Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              </svg>
+            </div>
+            <h3>Ultravelocidade</h3>
+            <p>Downloads e uploads rápidos para você não perder tempo.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Wifi Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+            </div>
+            <h3>Wi-Fi 6</h3>
+            <p>Mais alcance e estabilidade para conectar todos os dispositivos.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Gamepad Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" x2="10" y1="12" y2="12" />
+                <line x1="8" x2="8" y1="10" y2="14" />
+                <line x1="15" x2="15.01" y1="13" y2="13" />
+                <line x1="18" x2="18.01" y1="11" y2="11" />
+                <rect width="20" height="12" x="2" y="6" rx="2" />
+              </svg>
+            </div>
+            <h3>Lag Zero</h3>
+            <p>A melhor conexão para jogos online e streaming em 4K.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <!-- Headset Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                </path>
+              </svg>
+            </div>
+            <h3>Suporte Digital</h3>
+            <p>Atendimento rápido e eficiente sempre que você precisar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS SECTION -->
+    <section id="depoimentos" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Empresas que crescem com a ultravelocidade da TIM.</h2>
+        </div>
+
+        <!-- B2C Testimonials (Casa) - REMOVIDO -->
+
+        <!-- B2B Testimonials (Empresa) -->
+
+        <!-- B2B Testimonials (Empresa) -->
+        <div id="reviews-empresa" class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Marcos Oliveira"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Marcos Oliveira</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Dono de Cafeteria</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Oferecer Wi-Fi rápido para meus clientes é essencial. Com a TIM, o café está
+              sempre cheio e a conexão não cai."</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Cláudia Santos"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Cláudia Santos</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Escritório de Contabilidade</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Enviamos arquivos pesados para a Receita Federal o dia todo. A velocidade de
+              upload otimizou nosso tempo em 100%."</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Pedro H." class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Pedro H.</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Start-up de Tecnologia</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Precisávamos de IP Fixo e estabilidade para nossos servidores locais. O suporte
+              empresarial da TIM é diferenciado."</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Ana Paula" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Ana Paula</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Loja de Roupas/E-commerce</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Faço vendas por videochamada e gerencio o estoque na nuvem. A internet não pode
+              parar, e a TIM nunca me deixou na mão."</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Dr. Roberto Mendes"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Dr. Roberto Mendes</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Clínica Odontológica</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"A agenda digital e o sistema de raio-x na nuvem dependem da internet. Com a
+              TIM, a clínica nunca para."</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sofia Albuquerque"
+                class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Sofia Albuquerque</h4>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                    stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <p>Estúdio de Arquitetura</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Renderizamos projetos em 3D e enviamos para clientes fora do país. A velocidade
+              de upload de 500 Mega é fundamental."</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dúvidas Frequentes</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">O que é a TIM Ultrafibra?</button>
+            <div class="faq-answer">
+              <p>É a internet banda larga da TIM com tecnologia 100% fibra óptica, garantindo ultravelocidade e
+                estabilidade.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">A instalação é gratuita?</button>
+            <div class="faq-answer">
+              <p>Sim, a instalação é gratuita para a maioria dos planos mediante fidelidade de 12 meses.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Quais documentos preciso para contratar?</button>
+            <div class="faq-answer">
+              <p>Apenas RG e CPF. A contratação é rápida e pode ser feita totalmente online ou pelo WhatsApp.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">O Wi-Fi está incluso?</button>
+            <div class="faq-answer">
+              <p>Sim, todos os nossos planos incluem modem Wi-Fi de alta performance gratuitamente em regime de
+                comodato.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section id="contato" class="footer-cta">
+      <div class="container">
+        <h2>Pronto para ter TIM Ultrafibra?</h2>
+        <p class="footer-cta__subtitle">A instalação é rápida e você já sai navegando na ultravelocidade ainda hoje.</p>
+        <a href="#planos" class="btn btn--primary">Contratar Agora</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <img src="logo-tim-azul.png" alt="TIM Logo" width="80" height="auto">
+        <p class="footer__agent">Agente Autorizado TIM</p>
+      </div>
+
+      <div class="footer__contact">
+        <p>Vendas WhatsApp: <strong>(71) 99971-5589</strong></p>
+      </div>
+
+      <div class="footer__legal">
+        <p>&copy; 2024 TIM Ultrafibra. Todos os direitos reservados.</p>
+        <p>Ofertas sujeitas a análise de crédito e viabilidade técnica. Consulte o regulamento.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING WIDGET -->
+  <div class="whatsapp-floating" id="whatsappFloating">
+    <style>
+      /* WhatsApp Floating Widget */
+      .whatsapp-floating {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+      }
+
+      /* Badge superior */
+      .whatsapp-floating__badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(26, 26, 36, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        color: #ffffff;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeUp 0.4s ease forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .whatsapp-floating__dot {
+        width: 8px;
+        height: 8px;
+        background: #10b981;
+        border-radius: 50%;
+        animation: pulse-dot 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse-dot {
+
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        50% {
+          opacity: 0.7;
+          transform: scale(1.2);
+        }
+      }
+
+      /* Botão principal */
+      .whatsapp-floating__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #25d366;
+        color: #ffffff;
+        padding: 14px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+        animation: pulse-shadow 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse-shadow {
+
+        0%,
+        100% {
+          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        50% {
+          box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+        }
+      }
+
+      .whatsapp-floating__btn:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+      }
+
+      .whatsapp-floating__btn svg {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+      }
+
+      .whatsapp-floating__text {
+        white-space: nowrap;
+      }
+
+      /* Mobile: apenas ícone circular */
+      @media (max-width: 640px) {
+        .whatsapp-floating__btn {
+          padding: 16px;
+          border-radius: 50%;
+        }
+
+        .whatsapp-floating__text {
+          display: none;
+        }
+      }
+    </style>
+
+    <!-- Badge com contador online -->
+    <div class="whatsapp-floating__badge">
+      <span class="whatsapp-floating__dot"></span>
+      <span><span id="online-counter">127</span> pessoas online</span>
+    </div>
+
+    <!-- Botão WhatsApp -->
+    <a href="#" class="whatsapp-floating__btn" id="whatsappBtn" onclick="openWhatsApp('Geral', 'Widget')">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      <span class="whatsapp-floating__text">WhatsApp</span>
+    </a>
+  </div>
+
+  <script>
+    // Atualizar contador aleatoriamente entre 100-150 a cada 8 segundos
+    function updateOnlineCounter() {
+      const counter = document.getElementById('online-counter');
+      if (counter) {
+        const randomCount = Math.floor(Math.random() * (150 - 100 + 1)) + 100;
+        counter.textContent = randomCount;
+      }
+    }
+
+    // Atualizar a cada 8 segundos
+    setInterval(updateOnlineCounter, 8000);
+
+    // Valor inicial após 2 segundos
+    setTimeout(updateOnlineCounter, 2000);
+  </script>
+
+  <script src="lp-tim.min.js"></script>
+</body>
+
+</html>
