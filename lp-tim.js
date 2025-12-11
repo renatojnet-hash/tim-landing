@@ -54,29 +54,26 @@ function initWhatsAppCounter() {
   counterElement.innerText = randomCount;
 }
 
-function openWhatsApp(planName, segment) {
+// Helper function to generate WhatsApp URLs (for dynamic use cases)
+function getWhatsAppURL(planName, segment) {
   let message = "";
-
-  // Clean up plan name for message (remove "Mega" or "Giga" redundant repetition if needed, but user just said "contract the plan...")
-  // Logic: 
-  // Para Casa: Olá! Quero contratar o plano 700 Mega
-  // Para Empresa: Olá! Quero contratar o plano 1 GIGA Empresarial
-
-  // segment comes as 'Casa', 'Empresa' or 'Widget'
 
   if (segment === 'Widget') {
     message = "Olá! Gostaria de saber mais sobre a TIM Ultrafibra.";
   } else if (segment === 'Empresa') {
-    // Remove "Empresa" word from planName if present to avoid redundancy "1 Giga Empresa Empresarial"
     const cleanPlanName = planName.replace(' Empresa', '').replace('Empresas', '').trim();
     message = `Olá! Quero contratar o plano ${cleanPlanName} Empresarial`;
   } else {
-    // Casa
     const cleanPlanName = planName.replace(' Casa', '').trim();
     message = `Olá! Quero contratar o plano ${cleanPlanName}`;
   }
 
   const encodedMessage = encodeURIComponent(message);
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+}
+
+// Legacy function kept for backwards compatibility (if needed)
+function openWhatsApp(planName, segment) {
+  const url = getWhatsAppURL(planName, segment);
   window.open(url, '_blank');
 }
