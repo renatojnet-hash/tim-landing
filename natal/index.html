@@ -111,8 +111,8 @@
            * ========== EDITE AS IMAGENS AQUI ==========
            * Substitua as URLs abaixo pelas suas imagens de banner
            */
-          --hero-bg-desktop: url('/hero-banner-web-dez.png');
-          --hero-bg-mobile: url('/hero-iza-mobile.png');
+          --hero-bg-desktop: url('/tim-residencial-hero-web-jan.webp');
+          --hero-bg-mobile: url('/tim-residencial-hero-mobile-jan.webp');
 
           position: relative;
           width: 100%;
@@ -133,10 +133,11 @@
             background:
               var(--hero-bg-mobile),
               radial-gradient(circle at 50% 30%, #003399 0%, #00164F 80%);
-            background-size: cover, cover;
-            background-position: center top, center;
-            min-height: auto;
-            padding: 40px 0;
+            background-size: contain, cover;
+            background-position: center bottom, center;
+            background-color: #00164F;
+            min-height: 85vh;
+            padding: 40px 0 20px 0;
           }
         }
 
@@ -158,10 +159,10 @@
           .hero-banner__overlay {
             width: 100%;
             background: linear-gradient(180deg,
-                rgba(0, 22, 79, 0.9) 0%,
-                rgba(0, 22, 79, 0.75) 35%,
-                rgba(0, 22, 79, 0.35) 60%,
-                rgba(0, 22, 79, 0.0) 78%);
+              rgba(0, 22, 79, 0.85) 0%,
+              rgba(0, 22, 79, 0.65) 25%,
+              rgba(0, 22, 79, 0.25) 45%,
+              rgba(0, 22, 79, 0.0) 60%);
           }
         }
 
@@ -176,7 +177,7 @@
           .hero-banner__content {
             max-width: 100%;
             text-align: left;
-            padding: 30px 20px;
+            padding: 20px 20px 300px 20px;
           }
         }
 
@@ -303,18 +304,18 @@
 
           <!-- NOME DO PLANO - Edite o texto abaixo -->
           <div class="hero-banner__plan">
-            <strong style="color: #00D6D6;">600 MEGA</strong>
+            <strong style="color: #00D6D6;">600 MEGA EXCLUSIVO RN</strong>
           </div>
 
           <!-- PREÇOS - Edite os valores abaixo -->
           <div class="hero-banner__price-box">
-            <span class="hero-banner__price-old">De R$ 129,99</span>
+            <span class="hero-banner__price-old">De R$ 125,99</span>
             <div class="hero-banner__price-value">
               <span class="currency">R$</span>
               <span class="price">49,99</span>
               <span class="period">/mês</span>
             </div>
-            <p class="hero-banner__price-note">Oferta válida até as 23:59 de hoje - Natal</p>
+            <p class="hero-banner__price-note">No Débito Automático</p>
           </div>
 
           <!-- BOTÃO CTA -->
@@ -338,37 +339,12 @@
             <div class="plan-card__header">
               <span class="plan-card__badge">MAIS VENDIDO</span>
               <h3>TIM Ultrafibra</h3>
-              <div class="plan-card__speed">600 MEGA</div>
-            </div>
-            <div class="plan-card__price">
-              <s>R$ 149,99</s>
-              <div>
-                <span class="currency">R$</span>119<span class="cents">,99</span>
-                <span class="period">/mês</span>
-              </div>
-            </div>
-            <span class="plan-card__note">No Débito Automático</span>
-            <ul class="plan-card__benefits">
-              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
-              <li><i class="icon-check"></i> 600 Mega Download</li>
-              <li><i class="icon-check"></i> 300 Mega Upload</li>
-              <li><i class="icon-check"></i> <span class="streaming-globoplay">Globoplay Incluso</span></li>
-            </ul>
-            <a href="#" class="btn btn--primary full-width"
-              onclick="openWhatsApp('600 Mega Casa', 'Casa')">Contratar</a>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="plan-card plan-card--featured">
-            <div class="plan-card__badge">OFERTA FOCO</div>
-            <div class="plan-card__header">
-              <h3>TIM Ultrafibra</h3>
               <div class="plan-card__speed">700 MEGA</div>
             </div>
             <div class="plan-card__price">
-              <s>R$ 189,99</s>
+              <s>R$ 159,99</s>
               <div>
-                <span class="currency">R$</span>99<span class="cents">,99</span>
+                <span class="currency">R$</span>109<span class="cents">,99</span>
                 <span class="period">/mês</span>
               </div>
             </div>
@@ -377,10 +353,36 @@
               <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
               <li><i class="icon-check"></i> 700 Mega Download</li>
               <li><i class="icon-check"></i> 350 Mega Upload</li>
+              <li><i class="icon-check"></i> <span class="streaming-globoplay">Globoplay Incluso</span></li>
               <li><i class="icon-check"></i> Instalação Grátis</li>
             </ul>
             <a href="#" class="btn btn--primary full-width"
-              onclick="openWhatsApp('700 Mega Casa', 'Casa')">Contratar</a>
+              onclick="openWhatsApp('700 Mega + Globoplay Casa', 'Casa')">Contratar</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-card__badge">OFERTA FOCO</div>
+            <div class="plan-card__header">
+              <h3>TIM Ultrafibra</h3>
+              <div class="plan-card__speed">600 MEGA</div>
+            </div>
+            <div class="plan-card__price">
+              <s>R$ 125,99</s>
+              <div>
+                <span class="currency">R$</span>49<span class="cents">,99</span>
+                <span class="period">/mês</span>
+              </div>
+            </div>
+            <span class="plan-card__note">No Débito Automático</span>
+            <ul class="plan-card__benefits">
+              <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
+              <li><i class="icon-check"></i> 600 Mega Download</li>
+              <li><i class="icon-check"></i> 300 Mega Upload</li>
+              <li><i class="icon-check"></i> Oferta Exclusiva RN</li>
+            </ul>
+            <a href="#" class="btn btn--primary full-width"
+              onclick="openWhatsApp('600 Mega Exclusivo RN Casa', 'Casa')">Contratar</a>
           </div>
 
           <!-- Card 3 -->
@@ -390,9 +392,9 @@
               <div class="plan-card__speed">1 GIGA</div>
             </div>
             <div class="plan-card__price">
-              <s>R$ 229,99</s>
+              <s>R$ 189,99</s>
               <div>
-                <span class="currency">R$</span>149<span class="cents">,99</span>
+                <span class="currency">R$</span>129<span class="cents">,99</span>
                 <span class="period">/mês</span>
               </div>
             </div>
@@ -401,7 +403,6 @@
               <li><i class="icon-check"></i> Wi-Fi 6 Incluso</li>
               <li><i class="icon-check"></i> 1 Giga Download</li>
               <li><i class="icon-check"></i> 500 Mega Upload</li>
-              <li><i class="icon-check"></i> <span class="streaming-paramount">Paramount+</span></li>
             </ul>
             <a href="#" class="btn btn--primary full-width" onclick="openWhatsApp('1 Giga Casa', 'Casa')">Contratar</a>
           </div>
@@ -413,7 +414,7 @@
               <div class="plan-card__speed">2 GIGA</div>
             </div>
             <div class="plan-card__price">
-              <s>R$ 459,99</s>
+              <s>R$ 419,99</s>
               <div>
                 <span class="currency">R$</span>369<span class="cents">,99</span>
                 <span class="period">/mês</span>
@@ -1117,7 +1118,7 @@
 
       <div class="footer__legal">
         <p>&copy; 2024 TIM Ultrafibra. Todos os direitos reservados.</p>
-        <p>Ofertas sujeitas a análise de crédito e viabilidade técnica. Consulte o regulamento.</p>
+        <p>Ofertas válidas até 01/02/2026. Sujeitas a análise de crédito e viabilidade técnica. Consulte o regulamento.</p>
       </div>
     </div>
   </footer>
