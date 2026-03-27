@@ -1260,20 +1260,33 @@
   </div>
   
   <script>
-    // Atualizar contador aleatoriamente entre 100-150 a cada 8 segundos
-    function updateOnlineCounter() {
-      const counter = document.getElementById('online-counter');
-      if (counter) {
-        const randomCount = Math.floor(Math.random() * (150 - 100 + 1)) + 100;
-        counter.textContent = randomCount;
-      }
+    const faixas = [
+      { inicio: 7,  fim: 8,  min: 4,  max: 7  },
+      { inicio: 8,  fim: 10, min: 18, max: 26 },
+      { inicio: 10, fim: 12, min: 22, max: 32 },
+      { inicio: 12, fim: 14, min: 20, max: 29 },
+      { inicio: 14, fim: 18, min: 18, max: 27 },
+      { inicio: 18, fim: 20, min: 15, max: 23 },
+      { inicio: 20, fim: 23, min: 10, max: 16 },
+      { inicio: 23, fim: 7,  min: 3,  max: 6  },
+    ];
+    function getPessoasOnline() {
+      var agora = new Date();
+      var hora = (agora.getUTCHours() - 3 + 24) % 24;
+      var faixa = faixas.find(function(f) {
+        return f.inicio < f.fim
+          ? hora >= f.inicio && hora < f.fim
+          : hora >= f.inicio || hora < f.fim;
+      });
+      return Math.floor(Math.random() * (faixa.max - faixa.min + 1)) + faixa.min;
     }
-    
-    // Atualizar a cada 8 segundos
-    setInterval(updateOnlineCounter, 8000);
-    
-    // Valor inicial após 2 segundos
-    setTimeout(updateOnlineCounter, 2000);
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('online-counter');
+      if (el) {
+        el.textContent = getPessoasOnline();
+        setInterval(function() { el.textContent = getPessoasOnline(); }, 240000);
+      }
+    });
   </script>
 
   <script src="lp-tim.min.js"></script>
