@@ -105,81 +105,44 @@
         ============================================
       -->
       <style>
+        /* === HERO: Gradient + Pessoa + Neon === */
         .hero-banner {
-          /* 
-           * ========== EDITE AS IMAGENS AQUI ==========
-           * Substitua as URLs abaixo pelas suas imagens de banner
-           */
-          --hero-bg-desktop: url('tim-residencial-hero-web-jan.webp');
-          --hero-bg-mobile: url('tim-residencial-hero-mobile-jan.webp');
-          
           position: relative;
           width: 100%;
-          min-height: 550px;
-          /* Gradiente de fallback + imagem */
-          background: 
-            var(--hero-bg-desktop),
-            radial-gradient(circle at 70% 50%, #003399 0%, #00164F 80%);
-          background-size: cover, cover;
-          background-position: right center, center;
-          background-repeat: no-repeat;
+          min-height: 560px;
+          background: linear-gradient(135deg, #001B3D 0%, #003264 40%, #004691 100%);
           display: flex;
           align-items: center;
+          overflow: hidden;
         }
-        
-        @media (max-width: 768px) {
-          .hero-banner {
-            background:
-              var(--hero-bg-mobile),
-              radial-gradient(circle at 50% 30%, #003399 0%, #00164F 80%);
-            background-size: contain, cover;
-            background-position: center bottom, center;
-            background-color: #00164F;
-            min-height: 85vh;
-            padding: 40px 0 20px 0;
-          }
-        }
-        
-        .hero-banner__overlay {
+
+        .hero-banner__person {
           position: absolute;
-          top: 0;
-          left: 0;
-          width: 60%;
+          right: 5%;
+          bottom: 0;
           height: 100%;
-          background: linear-gradient(90deg,
-            rgba(0, 22, 79, 0.78) 0%,
-            rgba(0, 22, 79, 0.62) 28%,
-            rgba(0, 22, 79, 0.32) 48%,
-            rgba(0, 22, 79, 0.0) 68%);
+          max-height: 560px;
+          object-fit: contain;
+          z-index: 1;
+        }
+
+        .hero-banner__neon {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 55%;
+          height: 100%;
+          z-index: 2;
           pointer-events: none;
         }
-        
-        @media (max-width: 768px) {
-          .hero-banner__overlay {
-            width: 100%;
-            background: linear-gradient(180deg,
-              rgba(0, 22, 79, 0.85) 0%,
-              rgba(0, 22, 79, 0.65) 25%,
-              rgba(0, 22, 79, 0.25) 45%,
-              rgba(0, 22, 79, 0.0) 60%);
-          }
-        }
-        
+
         .hero-banner__content {
           position: relative;
-          z-index: 2;
+          z-index: 3;
           max-width: 550px;
           padding: 60px 20px;
         }
-        
-        @media (max-width: 768px) {
-          .hero-banner__content {
-            max-width: 100%;
-            text-align: left;
-            padding: 20px 20px 300px 20px;
-          }
-        }
-        
+
         .hero-banner__badge {
           display: inline-block;
           background: rgba(255, 255, 255, 0.15);
@@ -192,7 +155,7 @@
           letter-spacing: 1px;
           text-transform: uppercase;
         }
-        
+
         .hero-banner__title {
           font-size: clamp(2rem, 5vw, 3.2rem);
           font-weight: 800;
@@ -200,28 +163,18 @@
           line-height: 1.1;
           margin-bottom: 16px;
         }
-        
+
         .hero-banner__subtitle {
           font-size: 1.05rem;
           color: rgba(255, 255, 255, 0.85);
           margin-bottom: 28px;
           line-height: 1.5;
         }
-        
-        .hero-banner__plan {
-          margin-bottom: 12px;
-        }
-        
-        .hero-banner__plan strong {
-          font-size: 1.6rem;
-          color: #00D6D6;
-          font-weight: 800;
-        }
-        
-        .hero-banner__price-box {
-          margin-bottom: 28px;
-        }
-        
+
+        .hero-banner__plan { margin-bottom: 12px; }
+        .hero-banner__plan strong { font-size: 1.6rem; color: #00D6D6; font-weight: 800; }
+
+        .hero-banner__price-box { margin-bottom: 28px; }
         .hero-banner__price-old {
           font-size: 0.95rem;
           color: rgba(255, 255, 255, 0.6);
@@ -229,89 +182,103 @@
           display: block;
           margin-bottom: 6px;
         }
-        
         .hero-banner__price-value {
-          display: flex;
-          align-items: baseline;
-          gap: 4px;
-          flex-wrap: wrap;
-          color: #00D6D6;
+          display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; color: #00D6D6;
         }
-        
-        .hero-banner__price-value .currency {
-          font-size: 1.5rem;
-          font-weight: 700;
-        }
-        
-        .hero-banner__price-value .price {
-          font-size: 3.2rem;
-          font-weight: 800;
-          line-height: 1;
-        }
-        
-        .hero-banner__price-value .period {
-          font-size: 1rem;
-          color: rgba(255, 255, 255, 0.8);
-          font-weight: 400;
-        }
-        
-        .hero-banner__price-note {
-          font-size: 0.85rem;
-          color: rgba(255, 255, 255, 0.7);
-          margin-top: 6px;
-        }
-        
+        .hero-banner__price-value .currency { font-size: 1.5rem; font-weight: 700; }
+        .hero-banner__price-value .price { font-size: 3.2rem; font-weight: 800; line-height: 1; }
+        .hero-banner__price-value .period { font-size: 1rem; color: rgba(255,255,255,0.8); font-weight: 400; }
+        .hero-banner__price-note { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-top: 6px; }
+
         .hero-banner .btn--highlight {
-          padding: 14px 36px;
-          font-size: 1rem;
-          background: #ffffff;
-          color: #003399;
-          font-weight: 700;
-          border-radius: 50px;
-          transition: all 0.3s ease;
+          padding: 14px 36px; font-size: 1rem; background: #ffffff; color: #003399;
+          font-weight: 700; border-radius: 50px; transition: all 0.3s ease;
         }
-        
         .hero-banner .btn--highlight:hover {
-          background: #f0f0f0;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+          background: #f0f0f0; transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(255,255,255,0.3);
         }
-        
+
+        /* Neon glow animation */
+        @keyframes neon-flow {
+          0% { stroke-dashoffset: 1000; }
+          100% { stroke-dashoffset: 0; }
+        }
+        .neon-body { animation: neon-flow 3s linear infinite; }
+        .neon-glow  { animation: neon-flow 3s linear infinite 0.1s; }
+        .neon-core  { animation: neon-flow 3s linear infinite 0.2s; }
+
+        @keyframes particle-pulse {
+          0%, 100% { opacity: 0.3; r: 2; }
+          50% { opacity: 1; r: 3.5; }
+        }
+        .neon-particle { animation: particle-pulse 2s ease-in-out infinite; }
+
+        /* === MOBILE === */
         @media (max-width: 768px) {
+          .hero-banner {
+            flex-direction: column;
+            min-height: auto;
+            padding: 0;
+          }
+          .hero-banner__content {
+            max-width: 100%;
+            text-align: left;
+            padding: 20px 20px 16px;
+          }
+          .hero-banner__person {
+            position: relative;
+            right: auto;
+            bottom: auto;
+            height: auto;
+            max-height: 300px;
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+          }
+          .hero-banner__neon { display: none; }
           .hero-banner .btn--highlight {
-            width: 100%;
-            max-width: 280px;
-            padding: 14px 30px;
+            width: 100%; max-width: 280px; padding: 14px 30px;
           }
         }
       </style>
-      
-      <div class="hero-banner__overlay"></div>
-      
+
+      <!-- Pessoa posicionada via CSS -->
+      <img src="/hero-residencial.webp"
+           alt="Cliente TIM Fibra sorrindo"
+           class="hero-banner__person"
+           width="507" height="680"
+           loading="eager" />
+
+      <!-- SVG Neon Fiber Optic Arc -->
+      <svg class="hero-banner__neon" viewBox="0 0 600 560" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
+        <!-- Arco de fibra contornando a pessoa: esquerda → topo → direita -->
+        <path class="neon-body" d="M 80,540 C 60,380 70,200 160,100 Q 250,10 380,30 Q 500,50 540,180"
+              stroke="#00B4FF" stroke-width="3" opacity="0.8" fill="none"
+              stroke-linecap="round" stroke-dasharray="12 6" />
+        <path class="neon-glow" d="M 80,540 C 60,380 70,200 160,100 Q 250,10 380,30 Q 500,50 540,180"
+              stroke="#00E5FF" stroke-width="1.5" opacity="0.6" fill="none"
+              stroke-linecap="round" stroke-dasharray="8 10" />
+        <path class="neon-core" d="M 80,540 C 60,380 70,200 160,100 Q 250,10 380,30 Q 500,50 540,180"
+              stroke="#ffffff" stroke-width="0.5" opacity="0.3" fill="none"
+              stroke-linecap="round" />
+        <!-- Partículas de luz ao longo do arco -->
+        <circle class="neon-particle" cx="80" cy="540" r="2" fill="#00E5FF" style="animation-delay: 0s" />
+        <circle class="neon-particle" cx="70" cy="340" r="2" fill="#00E5FF" style="animation-delay: 0.4s" />
+        <circle class="neon-particle" cx="160" cy="100" r="2" fill="#00E5FF" style="animation-delay: 0.8s" />
+        <circle class="neon-particle" cx="380" cy="30" r="2" fill="#00E5FF" style="animation-delay: 1.2s" />
+        <circle class="neon-particle" cx="540" cy="180" r="2" fill="#00E5FF" style="animation-delay: 1.6s" />
+      </svg>
+
       <div class="container">
         <div class="hero-banner__content">
-          <!-- BADGE - Edite o texto abaixo -->
           <span class="hero-banner__badge">OFERTA EXCLUSIVA</span>
-          
-          <!-- TÍTULO PRINCIPAL - Edite o texto abaixo -->
           <h1 class="hero-banner__title">TIM Fibra</h1>
-
-          <!-- SUBTÍTULO - Edite o texto abaixo -->
-          <p class="hero-banner__subtitle">
-            Ultravelocidade real na sua casa
-          </p>
-
-          <!-- DESCRIÇÃO - Edite o texto abaixo -->
-          <p class="hero-banner__subtitle">
-            Conecte-se com o futuro. Fibra de verdade para jogar, trabalhar e assistir sem travar.
-          </p>
-
-          <!-- NOME DO PLANO - Edite o texto abaixo -->
+          <p class="hero-banner__subtitle">Ultravelocidade real na sua casa</p>
+          <p class="hero-banner__subtitle">Conecte-se com o futuro. Fibra de verdade para jogar, trabalhar e assistir sem travar.</p>
           <div class="hero-banner__plan">
             <strong style="color: #00D6D6;">700 MEGA + Globoplay</strong>
           </div>
-
-          <!-- PREÇOS - Edite os valores abaixo -->
           <div class="hero-banner__price-box">
             <span class="hero-banner__price-old">De R$ 159,99</span>
             <div class="hero-banner__price-value">
@@ -321,8 +288,6 @@
             </div>
             <p class="hero-banner__price-note">No Débito Automático</p>
           </div>
-
-          <!-- BOTÃO CTA -->
           <a href="#planos" class="btn btn--highlight btn--lg">Contratar</a>
         </div>
       </div>
