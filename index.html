@@ -105,7 +105,7 @@
         ============================================
       -->
       <style>
-        /* === HERO: Gradient + Pessoa + Neon === */
+        /* === HERO: Gradient + Pessoa com Fibra === */
         .hero-banner {
           position: relative;
           width: 100%;
@@ -118,27 +118,18 @@
 
         .hero-banner__person {
           position: absolute;
-          right: 5%;
+          right: -2%;
           bottom: 0;
-          height: 100%;
-          max-height: 560px;
+          height: 110%;
+          max-height: 620px;
           object-fit: contain;
+          object-position: right bottom;
           z-index: 1;
-        }
-
-        .hero-banner__neon {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          width: 55%;
-          height: 100%;
-          z-index: 2;
-          pointer-events: none;
         }
 
         .hero-banner__content {
           position: relative;
-          z-index: 3;
+          z-index: 2;
           max-width: 550px;
           padding: 60px 20px;
         }
@@ -199,21 +190,6 @@
           box-shadow: 0 4px 15px rgba(255,255,255,0.3);
         }
 
-        /* Neon glow animation */
-        @keyframes neon-flow {
-          0% { stroke-dashoffset: 1000; }
-          100% { stroke-dashoffset: 0; }
-        }
-        .neon-body { animation: neon-flow 3s linear infinite; }
-        .neon-glow  { animation: neon-flow 3s linear infinite 0.1s; }
-        .neon-core  { animation: neon-flow 3s linear infinite 0.2s; }
-
-        @keyframes particle-pulse {
-          0%, 100% { opacity: 0.3; r: 2; }
-          50% { opacity: 1; r: 3.5; }
-        }
-        .neon-particle { animation: particle-pulse 2s ease-in-out infinite; }
-
         /* === MOBILE === */
         @media (max-width: 768px) {
           .hero-banner {
@@ -236,7 +212,6 @@
             margin: 0 auto;
             display: block;
           }
-          .hero-banner__neon { display: none; }
           .hero-banner .btn--highlight {
             width: 100%; max-width: 280px; padding: 14px 30px;
           }
@@ -245,30 +220,10 @@
 
       <!-- Pessoa posicionada via CSS -->
       <img src="/hero-residencial.webp"
-           alt="Cliente TIM Fibra sorrindo"
+           alt="Cliente TIM Fibra com fibra óptica"
            class="hero-banner__person"
-           width="507" height="680"
+           width="1003" height="560"
            loading="eager" />
-
-      <!-- SVG Neon Fiber Optic Arc -->
-      <svg class="hero-banner__neon" viewBox="0 0 600 560" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
-        <!-- Arco de fibra contornando a pessoa: esquerda → topo → direita -->
-        <path class="neon-body" d="M 80,540 C 60,380 70,200 160,100 Q 250,10 380,30 Q 500,50 540,180"
-              stroke="#00B4FF" stroke-width="3" opacity="0.8" fill="none"
-              stroke-linecap="round" stroke-dasharray="12 6" />
-        <path class="neon-glow" d="M 80,540 C 60,380 70,200 160,100 Q 250,10 380,30 Q 500,50 540,180"
-              stroke="#00E5FF" stroke-width="1.5" opacity="0.6" fill="none"
-              stroke-linecap="round" stroke-dasharray="8 10" />
-        <path class="neon-core" d="M 80,540 C 60,380 70,200 160,100 Q 250,10 380,30 Q 500,50 540,180"
-              stroke="#ffffff" stroke-width="0.5" opacity="0.3" fill="none"
-              stroke-linecap="round" />
-        <!-- Partículas de luz ao longo do arco -->
-        <circle class="neon-particle" cx="80" cy="540" r="2" fill="#00E5FF" style="animation-delay: 0s" />
-        <circle class="neon-particle" cx="70" cy="340" r="2" fill="#00E5FF" style="animation-delay: 0.4s" />
-        <circle class="neon-particle" cx="160" cy="100" r="2" fill="#00E5FF" style="animation-delay: 0.8s" />
-        <circle class="neon-particle" cx="380" cy="30" r="2" fill="#00E5FF" style="animation-delay: 1.2s" />
-        <circle class="neon-particle" cx="540" cy="180" r="2" fill="#00E5FF" style="animation-delay: 1.6s" />
-      </svg>
 
       <div class="container">
         <div class="hero-banner__content">
